@@ -1,11 +1,21 @@
 div.card{
     display: flex;
     flex-direction: column;
-   
+    height: 200px;
+    width: 300px;
 }
 
 div.photo{
     width: 100%;
     height: 60px;
-    background-image: url("http://robohash.org/test?60x100")
+    
+}
+
+div.name{
+    width: 100%;
+    height: 20px;
+}
+div.desc{
+    width:100%;
+    height: 20px;
 }
