@@ -3,9 +3,10 @@ import './Card.css';
 
 function App () {
     return(
-        <div>
-            <h1>Vijit Kamboj</h1>
-
+        <div className = "card">
+            <div class="photo"></div>
+            <div class="name"></div>
+            <dic class="desc"></dic>
         </div>
     )
 };
