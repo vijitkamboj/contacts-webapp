@@ -2,7 +2,7 @@ import React from 'react';
 import './nav.css';
 
 function app(){
-    returns(
+    return(
         <div id="nav">
             <div class="btn">About</div>
             <div class="btn"><a href="https://github.com/vijitkamboj/">GitHub</a></div>

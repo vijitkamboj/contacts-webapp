@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import registerServiceWorker from './serviceWorker'
+import Nav from './nav';
+import Cover from './cover';
+import App from './app';
 
 
 
-ReactDOM.render(<div id="root"></div>, document.getElementByName('body');
+
+ReactDOM.render(<div id="root"><Nav /><Cover /><App /></div> , document.body);
 
 
-registerServiceWorker();
