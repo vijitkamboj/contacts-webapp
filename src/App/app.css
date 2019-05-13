@@ -5,10 +5,10 @@
     position: relative;
     height: 1000px;
     width: 100%;
-    overflow: visible;
     background-image: url(assets/app-cover.jpeg) ;
     background-size: cover;
     background-position: bottom;
+    overflow: scroll;
 
     
 }
