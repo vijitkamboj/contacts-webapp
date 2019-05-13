@@ -1,18 +1,14 @@
-
 #app {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     height: 1000px;
-	width: 100%;
-	background-image: url(assets/app-cover4.jpg);
-	background-size: cover;
-	background-position: bottom;
-	
+    width: 100%;
+    overflow: visible;
+    background-image: url(assets/app-cover.jpeg) ;
+    background-size: cover;
+    background-position: bottom;
 
+    
 }
-
-
-
-

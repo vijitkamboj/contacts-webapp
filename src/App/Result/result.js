@@ -7,6 +7,21 @@ function app(props){
     return(
         <div id="result">
                 <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+              
+
         </div>
     )
 }
