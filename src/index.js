@@ -8,6 +8,11 @@ import App from './app';
 
 
 
-ReactDOM.render(<div id="container"><Cover /><App /><Nav /></div> , document.getElementById('root'));
+ReactDOM.render(<div id="container">
+                            <Cover />
+                            <App />
+                            <Nav />
+                            </div> 
+                            , document.getElementById('root'));
 
 
