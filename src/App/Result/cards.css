@@ -3,4 +3,42 @@
     -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.43);
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.43);
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dp-cont {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+.dp{
+    width: 100%;
+    height: 100%;
+    background-image: url(icons8-contacts-104.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.name{
+    width: 100%;
+    height: 30%;
+    font-weight: bold;
+    font-size:16pt;
+    text-align: center;
+
+
+}
+.cn {
+    width: 100%;
+    height: 20%;
+    font-weight: bold;
+    font-size:12pt;
+    text-align: center
 }

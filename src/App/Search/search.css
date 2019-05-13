@@ -17,10 +17,10 @@ input {
     outline: none;
     box-sizing: border-box;
     padding: 4px;
-    padding-left: 50px;
-    font-size: 15pt;
+    padding-left: 15px;
+
+    font-size: 13pt;
     color: rgb(95, 158, 160);
-    font-weight: bold;
 }
 
 
