@@ -10,12 +10,17 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-#root {
+#container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: auto;
 	align-items: center;
+}
+
+#root{
+	width:100%;
+	height:auto;
 }
 
 
