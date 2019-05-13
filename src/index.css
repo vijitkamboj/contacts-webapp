@@ -24,10 +24,8 @@ body {
 	flex-wrap: nowrap;
 
 	height: auto;
-	width: 95%;
+	width: 90%;
 	position: fixed;
-	border: 2px solid rgba(0, 0, 0, 0.664);
-	border-top: 0px;
 	background-color: rgba(0, 0, 0, 0.432)
 }
 
