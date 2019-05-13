@@ -17,6 +17,7 @@ body {
 	height: auto;
 	align-items: center;
 }
+
 #nav {
 	display: flex;
 	justify-content: flex-start;
@@ -71,40 +72,20 @@ a {
 }
 
 
-#app {
-	display: grid;
-	height: 100vh;
-	width: 100%;
-
-}
-
-
-#cover {
-	width: 100%;
-	height: 100vh;
-	background-image: url(assets/back-cover5.jpeg);
-	background-size: cover;
-	background-position: center;
-}
-
-
-#app {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	height: 100vh;
+#app-cont {
+	height: 700px;
 	width: 100%;
 	background-image: url(assets/app-cover4.jpg);
-	background-size: cover;
-	background-position: center;
-}
+    background-size: cover;
+    background-position: center;
 
-.searchBar{
-	position: absolute;
-	top:6px;
-	width: 90%;
-	height: 40px;	
 }
 
 
-	
+
+
+
+
+
+
+

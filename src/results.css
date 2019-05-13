@@ -1,0 +1,36 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+#searchBar {
+    position: absolute;
+    top: 6px;
+    width: 90%;
+    height: 40px;
+    background-color: cadetblue
+}
+
+
+#results {
+    position: absolute;
+    top: 60px;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    width: 90%;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.card {
+    background-color: cadetblue
+}
