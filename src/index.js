@@ -6,8 +6,6 @@ import Cover from './cover';
 import App from './app';
 
 
-
-
 ReactDOM.render(<div id="container">
                             <Cover />
                             <App />
