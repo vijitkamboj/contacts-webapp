@@ -1,7 +1,7 @@
 #searchBar {
     position: absolute;
     top: 15px;
-    width: 90%;
-    height: 40px;
+    width: 40%;
+    height: 60px;
     background-color: cadetblue
 }

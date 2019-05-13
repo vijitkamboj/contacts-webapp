@@ -1,11 +1,12 @@
 import React from 'react';
 import './result.css';
+import Cards from './cards'
 
 
 function app(props){
     return(
         <div id="result">
-                <div className="cards"></div>
+                <Cards />
         </div>
     )
 }
