@@ -1,9 +1,12 @@
 import React from 'react';
 import './result.css';
 
-function app(){
+
+function app(props){
     return(
-        <div id="result"></div>
+        <div id="result">
+                <div className="cards"></div>
+        </div>
     )
 }
 
