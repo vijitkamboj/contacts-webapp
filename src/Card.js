@@ -2,11 +2,11 @@ import React from 'react';
 import './Card.css';
 
 
-function contact () {
+function app () {
     return(
-      <div class="card">ersfsdsfsfs </div>
+      <div class="card"></div>
     )
 };
 
 
-export default contact;
+export default app;
