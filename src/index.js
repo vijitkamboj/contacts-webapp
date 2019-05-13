@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Nav from './nav';
-import Cover from './cover';
-import App from './app';
+import Nav from './Nav/nav';
+import Cover from './Cover/cover';
+import App from './App/app';
 
 
 ReactDOM.render(<div id="container">
