@@ -1,2 +1,2 @@
-![Cover](/Cover.PNG)
-![Contacts](/search.PNG)
+![Cover](Cover.PNG)
+![Contacts](search.PNG)
