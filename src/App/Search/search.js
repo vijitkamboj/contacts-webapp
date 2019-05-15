@@ -4,7 +4,8 @@ import './search.css';
 function app(){
     return(
         <div id="searchBar">
-            <input type="text" placeholder="SEARCH" /> 
+            <div id="sicon"></div>
+            <input type="text" />
         </div>
     )
 }
