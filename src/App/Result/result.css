@@ -7,8 +7,8 @@
     grid-row-gap: 25px;
     grid-column-gap: 20px;
 
-    position: absolute;
-    top: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     width: 90%;
     height: auto;

@@ -4,14 +4,13 @@
     align-items: center;
 
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
 
     background-image: url(assets/app-cover.jpeg);
     background-size: cover;
     background-position: bottom;
     scrollbar-width: none;
-
 }
 
 ::-webkit-scrollbar {
