@@ -1,0 +1,48 @@
+#footer {
+    height: auo;
+    width: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    position: fixed;
+    bottom: 8px;
+
+    border-radius: 10px;
+    background-color: rgba(1, 22, 22, 0.192);
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    transition: all 0.2s
+}
+
+#fb {
+    background-image: url(SociaIcons/facebook.png);
+    background-size: cover;
+
+}
+
+#ins {
+    background-image: url(SociaIcons/instagram.png);
+    background-size: cover;
+
+}
+
+#ln {
+    background-image: url(SociaIcons/linkedin.png);
+    background-size: cover;
+
+}
+
+#git {
+    background-image: url(SociaIcons/github.png);
+    background-size: cover;
+
+}
+
+.icon:hover {
+    transform: scale(1.4);
+}

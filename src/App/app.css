@@ -6,12 +6,9 @@
     position: relative;
     min-height: 100vh;
     height: auto;
-    width: 100%;
+    width: 90%;
 
-    background-image: url(assets/app-cover.jpeg);
-    background-size: cover;
-    background-position: bottom;
-    scrollbar-width: none;
+    background-color: rgba(0, 0, 0, 0.13)
 }
 
 ::-webkit-scrollbar {
