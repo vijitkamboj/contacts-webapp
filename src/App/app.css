@@ -4,12 +4,17 @@
     align-items: center;
 
     position: relative;
-    height: 150vh;
+    height: 750px;
     width: 100%;
 
-    background-image: url(assets/app-cover.jpeg) ;
+    background-image: url(assets/app-cover.jpeg);
     background-size: cover;
     background-position: bottom;
-    
-    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }

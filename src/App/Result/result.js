@@ -12,8 +12,18 @@ function app(props){
                 <Cards  name={"Kuldeep Singh"} />
                 <Cards  name={"Suchitter Kumar"} />
                 <Cards  name={"Sangeeta Rani"} />
-                <Cards  name={"Srijan Kamboj"} />
-                     
+                <Cards  name={"Vijit Kamboj"} />
+                <Cards  name={"Nikhil Chauhan"} />
+                <Cards  name={"Raunak Negi"} />
+                <Cards  name={"Kuldeep Singh"} />
+                <Cards  name={"Suchitter Kumar"} />
+                <Cards  name={"Sangeeta Rani"} />     
+                <Cards  name={"Vijit Kamboj"} />
+                <Cards  name={"Nikhil Chauhan"} />
+                <Cards  name={"Raunak Negi"} />
+                <Cards  name={"Kuldeep Singh"} />
+                <Cards  name={"Suchitter Kumar"} />
+                <Cards  name={"Sangeeta Rani"} />           
         </div>
     )
 }
