@@ -1,6 +1,6 @@
 #searchBar {
     margin-top: 15px;
-    
+
     display: flex;
 
     position: relative;
@@ -35,7 +35,8 @@
     font-weight: bold;
     color: white;
 }
-::placeholder{
+
+::placeholder {
     color: white;
 }
 
