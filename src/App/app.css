@@ -4,13 +4,12 @@
     align-items: center;
 
     position: relative;
-    height: 750px;
+    height: 100vh;
     width: 100%;
 
     background-image: url(assets/app-cover.jpeg);
     background-size: cover;
     background-position: bottom;
-    overflow: scroll;
     scrollbar-width: none;
 
 }
