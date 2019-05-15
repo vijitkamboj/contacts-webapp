@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     position: relative;
-    height: 1000px;
+    height: 150vh;
     width: 100%;
+
     background-image: url(assets/app-cover.jpeg) ;
     background-size: cover;
     background-position: bottom;
-    overflow: scroll;
-
     
+    overflow: hidden;
 }
