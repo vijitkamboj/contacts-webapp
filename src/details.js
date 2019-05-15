@@ -19,7 +19,7 @@ var contacts = {
 
     nikhil: {
         firstName: "Nikhil",
-        lastName: "Chauhan";
+        lastName: "Chauhan",
         number: "9283479825"
     },
     raunak: {
