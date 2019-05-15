@@ -27,7 +27,9 @@
     border: none;
 
     font-size: 20px;
-    color: rgb(95, 158, 160);
+    font-weight: bold;
+    /* color: rgb(95, 158, 160); */
+    color: black
 }
 
 #sicon {
