@@ -36,7 +36,7 @@
 	cursor: pointer;
 }
 
-a#nav {
+a.link{
 	text-decoration: none;
 	color: white
 }
