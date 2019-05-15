@@ -14,7 +14,7 @@
 
 }
 
-.btn {
+.navbtn {
 	padding: 7px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -26,17 +26,17 @@
 	color: rgb(255, 255, 255);
 }
 
-#spc {
+#spcbtn {
 	margin-left: auto;
 	margin-right: 0px;
 }
 
-.btn:hover {
+.navbtn:hover {
 	background-color: rgb(0, 0, 0);
 	cursor: pointer;
 }
 
-a {
+a#nav {
 	text-decoration: none;
 	color: white
 }

@@ -4,10 +4,10 @@ import './nav.css';
 function app(){
     return(
         <div id="nav">
-            <div className="btn">About</div>
-            <div className="btn"><a href="https://github.com/vijitkamboj/">GitHub</a></div>
-            <div className="btn">Log In</div>
-            <div className="btn" id="spc">Sign Up</div>
+            <div className="navbtn">About</div>
+            <div className="navbtn"><a href="https://github.com/vijitkamboj/" id="nav">GitHub</a></div>
+            <div className="navbtn">Log In</div>
+            <div className="navbtn" id="spcbtn">Sign Up</div>
 	    </div>
     )
 }

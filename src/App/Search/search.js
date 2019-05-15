@@ -5,7 +5,7 @@ function app(){
     return(
         <div id="searchBar">
             <div id="sicon"></div>
-            <input type="text" />
+            <input type="text" id="sinput" />
         </div>
     )
 }
