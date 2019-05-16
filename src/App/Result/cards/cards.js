@@ -7,7 +7,7 @@ function app(props){
         <div className="cards">
                 <div className="dp-cont"><div className="dp"></div></div>
                 <div className="name">{props.name}</div>
-                <div className="cn">85555957579</div>
+                <div className="cn">{props.number}</div>
         </div>
     )
 }
