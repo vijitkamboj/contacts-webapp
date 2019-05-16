@@ -1,12 +1,11 @@
 #footer {
-    height: auo;
-    width: auto;
-
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    position: fixed;
-    bottom: 8px;
+
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
 
     border-radius: 10px;
     background-color: rgba(1, 22, 22, 0.192);
@@ -42,6 +41,7 @@
     background-size: cover;
 
 }
+
 
 .icon:hover {
     transform: scale(1.4);

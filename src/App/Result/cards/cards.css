@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: rgba(250, 250, 250, 0.404);
+    background-color: rgba(250, 250, 250, 0.247);
 
     -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.43);
@@ -24,7 +24,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url(contact_icon.png);
+    background-image: url(contact_icon_red.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

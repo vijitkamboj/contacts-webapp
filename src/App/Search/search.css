@@ -1,11 +1,11 @@
 #searchBar {
-    margin-top: 15px;
-
     display: flex;
-
     position: relative;
+
     width: 300px;
     height: 40px;
+    margin-top: 15px;
+    
     border-radius: 20px;
     transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -47,6 +47,6 @@
 
     width: 40px;
 
-    background-image: url(sicon.png);
+    background-image: url(sicon_red.png);
     background-size: cover
 }
