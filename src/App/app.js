@@ -23,7 +23,7 @@ class app extends Component {
     render(){
         const filteredContacts = this.state.contactState.filter( contact => {
             return(
-                `${contact.firstName} ${contact.lastName}`.toLowerCase().includes(this.state.searchFeild.toLowerCase())
+                `${contact.firstName} ${contact.lastName}`.toLowerCase().includes(this.state.searchFeild.toLowerCase())||contact.number.includes(this.state.searchFeild)
             )
             });
         return(
