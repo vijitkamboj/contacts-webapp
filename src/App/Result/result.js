@@ -1,18 +1,21 @@
 import React from 'react';
 import './result.css';
 import Cards from './cards/cards';
-import Contacts from './details';
 
-const contactArray= Contacts.map((user) => {
-    return (
-        <Cards key={user.id} name = {`${user.firstName} ${user.lastName}`} number={user.number} /> 
-    )
-});
-
-function app(){
+function app({contactArray}){
     return(
         <div id="result">
-            {contactArray}          
+            {contactArray.map((user) => {
+                return (
+                    <Cards 
+                    key={user.id} 
+                    name = {`${user.firstName} ${user.lastName}`} 
+                    number={user.number} 
+                    /> 
+                )
+            }
+            ) 
+            }        
         </div>
     )
 };
