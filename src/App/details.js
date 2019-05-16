@@ -67,6 +67,18 @@ const contacts = [
         lastName: "Kamboj",
         number: '9342342342'
     },
+    {
+        id:11,
+        firstName: "Sangeeta",
+        lastName: "Rani",
+        number: '9342342342'
+    },
+    {
+        id:12,
+        firstName: "Suchitter",
+        lastName: "Kumar",
+        number: '9342342342'
+    },
 
 ];
 
