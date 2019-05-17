@@ -2,15 +2,13 @@ import React , {Component} from 'react';
 import './app.css';
 import Search from './Search/search';
 import Result from './Result/result';
-import Contacts from './details';
-
 
 class app extends Component {
 
     constructor(){
         super();
         this.state = {
-            contactState:Contacts,
+            contactState:[],
             searchFeild:''
         };
     }
@@ -20,10 +18,16 @@ class app extends Component {
 
     }
 
+    componentDidMount(){
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then( response => response.json())
+        .then( users => this.setState({contactState : users}) );
+    }
+
     render(){
         const filteredContacts = this.state.contactState.filter( contact => {
             return(
-                `${contact.firstName} ${contact.lastName}`.toLowerCase().includes(this.state.searchFeild.toLowerCase())||contact.number.includes(this.state.searchFeild)
+                contact.name.toLowerCase().includes(this.state.searchFeild.toLowerCase())||contact.phone.includes(this.state.searchFeild)
             )
             });
         return(

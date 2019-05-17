@@ -9,8 +9,8 @@ function app({contactArray}){
                 return (
                     <Cards 
                     key={user.id} 
-                    name = {`${user.firstName} ${user.lastName}`} 
-                    number={user.number} 
+                    name = {user.name} 
+                    number={user.phone} 
                     /> 
                 )
             }
