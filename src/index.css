@@ -28,8 +28,9 @@ body {
 	height:auto;
 }
 
-
-
+::-webkit-scrollbar {
+    width: 0px;
+}
 
 
 
