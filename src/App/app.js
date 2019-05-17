@@ -2,6 +2,7 @@ import React , {Component} from 'react';
 import './app.css';
 import Search from './Search/search';
 import Result from './Result/result';
+import Error from '../ErrorBoundary/errorboundary'
 
 class app extends Component {
 
@@ -33,7 +34,10 @@ class app extends Component {
         return(
             <div id="app">
                 <Search searchChange = {this.onSearchChange}/>
-                <Result contactArray = {filteredContacts}/>
+                <Error>
+                    <Result contactArray = {filteredContacts}/>
+                </Error>
+                
             </div>
         );
     }
