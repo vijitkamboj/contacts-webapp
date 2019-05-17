@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {Provider , Connector} from 'react-redux'
 import './index.css'
 import Nav from './Nav/nav';
 import Cover from './Cover/cover';
