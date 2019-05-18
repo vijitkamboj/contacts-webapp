@@ -16,7 +16,6 @@ const mapStateToProps = (state) =>{
 const mapDispatchToProps = (dispatch) => {
     return{
             onSearchChange : (event) => {
-                console.log(4);
                 return dispatch(setSearchBar(event.target.value))}
         }
     
@@ -39,7 +38,6 @@ class app extends Component {
     }
 
     render(){
-        console.log(1);
         const {searchField , onSearchChange} = this.props;
         const {contactState} = this.state;
         const filteredContacts = contactState.filter( contact => {
