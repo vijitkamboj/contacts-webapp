@@ -4,11 +4,14 @@ import './app.css';
 import Search from './Search/search';
 import Result from './Result/result';
 import Error from '../ErrorBoundary/errorboundary';
-import {setSearchBar} from '../actions';
+import {setSearchBar, requestContacts} from '../actions';
 
 const mapStateToProps = (state) =>{
     return {
-            searchField: state.searchField
+            searchField: state.searchContacts.searchField,
+            contactState: state.requestContactsAPI.contactState,
+            isPending: state.requestContactsAPI.isPending,
+            error: state.requestContactsAPI.error
         }
     
 }
@@ -16,35 +19,24 @@ const mapStateToProps = (state) =>{
 const mapDispatchToProps = (dispatch) => {
     return{
             onSearchChange : (event) => {
-                return dispatch(setSearchBar(event.target.value))}
+                return dispatch(setSearchBar(event.target.value))},
+            onRequestContacts : () => dispatch(requestContacts())
         }
     
 }
 
 class app extends Component {
-
-    constructor(){
-        super();
-        this.state = {
-            contactState:[]
-        }
-    }
-
     componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then( response => response.json())
-        .then( users => this.setState({contactState : users}) );
+        this.props.onRequestContacts()
     }
 
     render(){
-        const {searchField , onSearchChange} = this.props;
-        const {contactState} = this.state;
-        const filteredContacts = contactState.filter( contact => {
-            return(
-                contact.name.toLowerCase().includes(searchField.toLowerCase())||contact.phone.includes(searchField.toLowerCase())
-            )
+            const {searchField , onSearchChange , contactState} = this.props;
+            const filteredContacts = contactState.filter( contact => {
+            return(contact.name.toLowerCase().includes(searchField.toLowerCase())||contact.phone.includes(searchField.toLowerCase()))
             });
-        return(
+            
+            return(
             <div id="app">
                 <Search searchChange = {onSearchChange}/>
                 <Error>
@@ -52,7 +44,7 @@ class app extends Component {
                 </Error>
                 
             </div>
-        );
+            );
     }
 }
 
