@@ -1,4 +1,4 @@
-import {updateSearchFeild} from './constant';
+import {updateSearchField} from './constant';
 
 const initial_state ={
     searchField : ''
@@ -6,10 +6,11 @@ const initial_state ={
 
 export const searchContacts = (state = initial_state ,action={} ) => {
     switch (action.type) {
-        case updateSearchFeild:
-            return( Object.assign(state ,{} , {searchField : action.payload}) )
+        case updateSearchField:
+            return( Object.assign({} , state,{searchField : action.payload}) )
     
         default:
             return state;
     }
 }
+

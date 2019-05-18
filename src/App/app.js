@@ -1,22 +1,35 @@
 import React , {Component} from 'react';
+import {connect} from 'react-redux';
 import './app.css';
 import Search from './Search/search';
 import Result from './Result/result';
-import Error from '../ErrorBoundary/errorboundary'
+import Error from '../ErrorBoundary/errorboundary';
+import {setSearchBar} from '../actions';
+
+const mapStateToProps = (state) =>{
+    return {
+            searchField: state.searchField
+        }
+    
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return{
+            onSearchChange : (event) => {
+                console.log(4);
+                return dispatch(setSearchBar(event.target.value))}
+        }
+    
+}
+
 
 class app extends Component {
 
     constructor(){
         super();
         this.state = {
-            contactState:[],
-            searchFeild:''
-        };
-    }
-
-    onSearchChange = (event) => {
-        this.setState({searchFeild : event.target.value});
-
+            contactState:[]
+        }
     }
 
     componentDidMount(){
@@ -26,14 +39,17 @@ class app extends Component {
     }
 
     render(){
-        const filteredContacts = this.state.contactState.filter( contact => {
+        console.log(1);
+        const {searchField , onSearchChange} = this.props;
+        const {contactState} = this.state;
+        const filteredContacts = contactState.filter( contact => {
             return(
-                contact.name.toLowerCase().includes(this.state.searchFeild.toLowerCase())||contact.phone.includes(this.state.searchFeild)
+                contact.name.toLowerCase().includes(searchField.toLowerCase())||contact.phone.includes(searchField.toLowerCase())
             )
             });
         return(
             <div id="app">
-                <Search searchChange = {this.onSearchChange}/>
+                <Search searchChange = {onSearchChange}/>
                 <Error>
                     <Result contactArray = {filteredContacts}/>
                 </Error>
@@ -43,4 +59,4 @@ class app extends Component {
     }
 }
 
-export default app;
+export default connect(mapStateToProps,mapDispatchToProps)(app);

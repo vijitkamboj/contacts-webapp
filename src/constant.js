@@ -1,1 +1,1 @@
-export const updateSearchFeild = 'updateSearchFeid'
+export const updateSearchField = 'updateSearchField'
