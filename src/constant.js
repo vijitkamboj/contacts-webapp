@@ -1,1 +1,6 @@
-export const updateSearchField = 'updateSearchField'
+export const updateSearchField = 'updateSearchField';
+
+export const REQUEST_CONTANCTS_PENDING = 'REQUEST_CONTANCTS_PENDING',
+REQUEST_CONTANCTS_SUCCESS = 'REQUEST_CONTANCTS_SUCCESS',
+REQUEST_CONTANCTS_FAILED = 'REQUEST_CONTANCTS_FAILED',
+
