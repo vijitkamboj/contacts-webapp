@@ -21,7 +21,6 @@ const mapDispatchToProps = (dispatch) => {
     
 }
 
-
 class app extends Component {
 
     constructor(){
