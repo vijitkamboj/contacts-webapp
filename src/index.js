@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux';
 import {createStore ,applyMiddleware} from 'redux';
 import {createLogger} from 'redux-logger';
+import thunkMidlleware from 'redux-thunk';
 import './index.css'
 import Nav from './Nav/nav';
 import Cover from './Cover/cover';
@@ -11,9 +12,7 @@ import Footer from './Footer/footer';
 import {searchContacts} from './reducers';
 
 const logger = createLogger();
-const store = createStore(searchContacts , applyMiddleware(logger));
-
-
+const store = createStore(searchContacts , applyMiddleware(thunkMidlleware,logger));
 
 ReactDOM.render(<div id="container">
                             <Cover />
