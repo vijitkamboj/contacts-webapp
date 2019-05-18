@@ -1,8 +1,8 @@
-import {updateSearchBar} from './constant'
+import {updateSearchFeild} from './constant'
 
-export const setSearchField = (text) => {
+export const setSearchBar = (text) => {
     return(
-        {type : updateSearchBar,
+        {type : updateSearchFeild,
         payload : text
         }
     )
